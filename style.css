@@ -1,0 +1,49 @@
+body {
+  background-color: #48A579;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body, html {
+  height: 100%;
+}
+
+.desk {
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.dealer-area, .player-area {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  display: flex;
+}
+.dealer-area > *, .player-area > * {
+  height: 150px;
+}
+
+.gameover {
+  display: none;
+}
+
+#result {
+  display: none;
+}
+
+.gameover:checked ~ .desk .action-area {
+  display: none;
+}
+.reset-area {
+  display: none;
+}
+.gameover:checked ~ .desk .reset-area {
+  display: block;
+}
+
+.gameover:checked ~ .desk #result {
+  display: block;
+}

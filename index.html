@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <input id="game-over" type="checkbox" class="gameover">
+  <div class="desk">
+    莊家 點數：<span id="dealer-score"></span>
+    <div id="dealer-area" class="dealer-area">
+      
+    </div>
+    玩家 點數：<span id="player-score"></span>
+    <div id="player-area" class="player-area">
+      
+    </div>
+    <div id="result" class="alert alert-warning"></div>
+    <div class="action-area">
+      <button id="hit-btn" class="ml-1 btn btn-primary">叫牌</button>
+      <button id="stand-btn" class="ml-1 btn btn-primary">停止叫牌</button>
+    </div>
+    <div class="reset-area">
+      <button id="reset-btn" class="btn btn-primary">再玩一次</button>
+    </div>
+    
+  </div>
+  <script src="./game.js"></script>
+</body>
+</html>
